@@ -212,7 +212,7 @@ export default function SignIn() {
 
 
     // 1. (vi) The user is signed into Discord and connected to wallet and has Silver and Gold
-    if ( connected && session && hasSilver && hasGold) {
+    if ( connected && session && hasSilver && hasGold && !hasPlatinum && !hasAir)  {
       return (
         <div>
           <div>
@@ -233,7 +233,7 @@ export default function SignIn() {
     }
 
     // 1. (vii) The user is signed into Discord and connected to wallet and has Silver and Platinum
-    if ( connected && session && hasSilver && hasPlatinum) {
+    if ( connected && session && hasSilver && hasPlatinum && !hasGold && !hasAir) {
       return (
         <div>
           <div>
@@ -255,7 +255,7 @@ export default function SignIn() {
 
 
     // 1. (viii) The user is signed into Discord and connected to wallet and has Silver and Air
-    if ( connected && session && hasSilver && hasAir) {
+    if ( connected && session && hasSilver && hasAir && !hasGold && !hasPlatinum) {
       return (
         <div>
           <div>
@@ -277,7 +277,7 @@ export default function SignIn() {
 
 
     // 1. (ix) The user is signed into Discord and connected to wallet and has Silver, Gold, Platinum and Air
-    if ( connected && session && hasGold && hasPlatinum) {
+    if ( connected && session && hasGold && hasPlatinum && !hasSilver && !hasAir) {
       return (
         <div>
           <div>
@@ -299,7 +299,7 @@ export default function SignIn() {
 
 
     // 1. (x) The user is signed into Discord and connected to wallet and has Gold and Air
-    if ( connected && session && hasGold && hasAir) {
+    if ( connected && session && hasGold && hasAir && !hasSilver && !hasPlatinum) {
       return (
         <div>
           <div>
