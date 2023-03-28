@@ -343,7 +343,7 @@ export default function SignIn() {
 
 
     // 1. (xii) The user is signed into Discord and connected to wallet and has Silver, Gold and Air
-    if ( connected && session && hasSilver && hasGold && hasAir && !hasAir) {
+    if ( connected && session && hasSilver && hasGold && hasAir && !hasPlatinum) {
       return (
         <div>
           <div>
@@ -372,7 +372,7 @@ export default function SignIn() {
       return (
         <div>
           <div>
-          <h1>You have the Silver, Gold, Platinum and Air NFTs</h1>
+          <h1>You have the Silver, Gold and Platinum NFTs</h1>
           <button onClick={() => grantSilverRole()} disabled={disabled}>
               {loading ? "Please Wait..." : "Give me the Silver role!"}
             </button>
