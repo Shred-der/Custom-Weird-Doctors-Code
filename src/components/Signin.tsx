@@ -259,7 +259,7 @@ export default function SignIn() {
       return (
         <div>
           <div>
-          <h1>You have the Silver, Gold, Platinum and Air NFTs</h1>
+          <h1>You have the Silver and Air NFTs</h1>
           <button onClick={() => grantSilverRole()} disabled={disabled}>
               {loading ? "Please Wait..." : "Give me the Silver role!"}
             </button>
@@ -320,8 +320,8 @@ export default function SignIn() {
     }
 
 
-    // 1. (v) The user is signed into Discord and connected to wallet and has Platinum and Air
-    if ( connected && session && hasPlatinum && hasAir) {
+    // 1. (xi) The user is signed into Discord and connected to wallet and has Platinum and Air
+    if ( connected && session && hasPlatinum && hasAir && !hasSilver && !hasGold) {
       return (
         <div>
           <div>
@@ -340,6 +340,58 @@ export default function SignIn() {
   
       );
     }
+
+
+    // 1. (xii) The user is signed into Discord and connected to wallet and has Silver, Gold and Air
+    if ( connected && session && hasSilver && hasGold && hasAir && !hasAir) {
+      return (
+        <div>
+          <div>
+          <h1>You have the Silver, Gold and Air NFTs</h1>
+          <button onClick={() => grantSilverRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Silver role!"}
+            </button>
+            <button onClick={() => grantGoldRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Gold role!"}
+            </button>
+          <button onClick={() => grantAirRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Air role!"}
+            </button>
+            <a onClick={() => signOut()}>
+              Sign out of Discord
+            </a>
+          </div>
+        </div>
+  
+      );
+    }
+
+
+    // 1. (xiii) The user is signed into Discord and connected to wallet and has Silver, Gold and Platinum
+    if ( connected && session && hasSilver && hasGold && hasPlatinum && !hasAir) {
+      return (
+        <div>
+          <div>
+          <h1>You have the Silver, Gold, Platinum and Air NFTs</h1>
+          <button onClick={() => grantSilverRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Silver role!"}
+            </button>
+            <button onClick={() => grantGoldRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Gold role!"}
+            </button>
+            <button onClick={() => grantPlatinumRole()} disabled={disabled}>
+              {loading ? "Please Wait..." : "Give me the Platinum role!"}
+            </button>
+            <a onClick={() => signOut()}>
+              Sign out of Discord
+            </a>
+          </div>
+        </div>
+  
+      );
+    }
+
+
 
 
   // 2. Connect Wallet
