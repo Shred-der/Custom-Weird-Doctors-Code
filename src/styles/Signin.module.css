@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
 .container {
-background-image: url("/background.png");
+background-color: #76B54F;
 background-size: cover;
-height: 550px;
+height: 900px;
 }
 
 .imgcontainer{
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:5px 0px;
-    height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 15px;
 }
 
 .img{
-    width:30%;
-  height:120%;
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* adjust as needed for your design */
 }
 
 .title{
@@ -30,16 +30,16 @@ padding-top: 1rem;
 
 .title h1{
 justify-self: normal;
-font-family: 'Bangers';
-font-size: 5rem;
-font-weight: 700px;
+font-family: 'Poppins';
+font-size: 3rem;
+font-weight: 400px;
 color: #fff;
 margin-bottom: 8px;
 }
 
 .title p{
     justify-self: normal;
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     font-weight: 700px;
     color: #fff;
@@ -54,7 +54,7 @@ justify-content: center;
 }
 
 .content h1 {
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     color: #fff;
     margin-bottom: 8px;
@@ -62,7 +62,7 @@ justify-content: center;
     
 
 .content h2 {
-font-family: 'Bangers';
+font-family: 'Poppins';
 font-size: 2rem;
 color: #4AC8A0;
 margin-bottom: 8px;
@@ -75,13 +75,13 @@ margin-bottom: 8px;
 }
 
 .content button {
-font-family: 'Bangers';
+font-family: 'Poppins';
 cursor: pointer;
 border: none;
 border-radius: 10px;
 font-style: normal;
 font-weight: 700;
-background-image: linear-gradient(#462b8a, #190c3a);
+background-image: linear-gradient(#000000, #0bb13a);
 padding: 20px 31px 20px 30px;
 color:white;
 letter-spacing: 1px;
@@ -93,32 +93,40 @@ font-size: 1.25rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 12rem;
+    padding-top: 8rem;
 }
 
 .btncontent button{
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     cursor: pointer;
     border: none;
     border-radius: 10px;
     font-style: normal;
-    font-weight: 700;
-    background-image: linear-gradient(#462b8a, #190c3a);
+    font-weight: 400px;
+    background-image: linear-gradient(#000000, #0bb13a);
     padding: 20px 31px 20px 30px;
     color:white;
     letter-spacing: 1px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .btncontent a{
     justify-self: normal;
     cursor: pointer;
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     font-weight: 700px;
     color: #fff;
     margin-bottom: 8px;
     padding-top: 1rem;
+}
+
+.btncontent h1{
+  color: white;
+}
+
+.btncontent p{
+  color: white;
 }
 
 .img {
@@ -134,8 +142,8 @@ font-size: 1.25rem;
   }
   
   .title h1 {
-    font-family: 'Bangers';
-    font-size: 5rem;
+    font-family: 'Poppins';
+    font-size: 3rem;
     font-weight: 700px;
     color: #fff;
     margin-bottom: 8px;
@@ -149,7 +157,7 @@ font-size: 1.25rem;
   
   .title p {
     justify-self: normal;
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     font-weight: 700px;
     color: #fff;
@@ -163,7 +171,7 @@ font-size: 1.25rem;
   }
   
   .content h1 {
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     color: #fff;
     margin-bottom: 8px;
@@ -176,7 +184,7 @@ font-size: 1.25rem;
   }
   
   .content h2 {
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     font-size: 2rem;
     color: #4AC8A0;
     margin-bottom: 8px;
@@ -201,13 +209,13 @@ font-size: 1.25rem;
   }
   
   .content button {
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     cursor: pointer;
     border: none;
     border-radius: 10px;
     font-style: normal;
     font-weight: 700;
-    background-image: linear-gradient(#462b8a, #190c3a);
+    background-image: linear-gradient(#000000, #0bb13a);
     padding: 20px 31px 20px 30px;
     color: white;
     letter-spacing: 1px;
@@ -222,16 +230,16 @@ font-size: 1.25rem;
   }
   
   .btncontent button {
-    font-family: 'Bangers';
+    font-family: 'Poppins';
     cursor: pointer;
     border: none;
     border-radius: 10px;
     font-style: normal;
-    font-weight: 700;
-    background-image: linear-gradient(#462b8a, #190c3a);
+    font-weight: 400px;
+    background-image: linear-gradient(#000000, #0bb13a);
     padding: 20px 31px 20px 30px;
     color: white;
     letter-spacing: 1px;
-    font-size: 3rem;
+    font-size: 1.3rem;
   }
 
