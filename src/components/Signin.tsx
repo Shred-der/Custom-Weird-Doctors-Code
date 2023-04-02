@@ -448,12 +448,6 @@ export default function SignIn() {
     );
   }
 
-  // 4. If connected and session and !haspolicyIdasset
-  if (loading) {
-    return (
-      <Loading />
-    );
-  }
 
   if  (connected && session && !hasGold && !hasSilver && !hasPlatinum && !hasAir) {
     return (
