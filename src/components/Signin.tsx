@@ -10,7 +10,6 @@ import MetaDataCheck from './metadatacheck';
 import styles from "../styles/Signin.module.css";
 import Image from 'next/image';
 import logo1 from "../images/weirddoctors.png";
-import Loading from './Loading';
 
 
 
